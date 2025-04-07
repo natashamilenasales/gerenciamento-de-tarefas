@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Projetos</title>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1296.0.min.js"></script> <!-- AWS SDK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script> <!-- UUID -->
+</head>
+<body>
+    <!-- Seção de Criação de Projeto -->
+    <div id="createProjectSection">
+        <h1>Criar Novo Projeto</h1>
+        <form id="createProjectForm">
+            <input type="text" id="projectName" placeholder="Nome do Projeto" required>
+            <input type="text" id="projectDescription" placeholder="Descrição do Projeto" required>
+            <input type="text" id="projectResponsible" placeholder="Responsável" required>
+            <input type="date" id="projectDueDate" required>
+            <button type="submit" id="addProjectButton">Adicionar Projeto</button>
+        </form>
+    </div>
+
+    <!-- Seção de Visualização de Projetos -->
+    <div id="viewProjectsSection">
+        <h1>Projetos</h1>
+        <table id="projectTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Responsável</th>
+                    <th>Data de Vencimento</th>
+                    <th>Ações</th> <!-- Coluna para Ações -->
+                </tr>
+            </thead>
+            <tbody id="projectTableBody">
+                <!-- Projetos serão listados aqui -->
+            </tbody>
+        </table>
+        <button id="viewProjectsButton">Ver Projetos</button>
+    </div>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script> <!-- Seu script JS -->
+</body>
+</html>

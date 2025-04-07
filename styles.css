@@ -1,0 +1,145 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Seção de Criação de Projeto */
+#createProjectSection {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#createProjectSection h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#createProjectForm input,
+#createProjectForm button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#createProjectForm input:focus,
+#createProjectForm textarea:focus {
+    border-color: #6c63ff;
+    outline: none;
+}
+
+#createProjectForm button {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#createProjectForm button:hover {
+    background-color: #5a54e1;
+}
+
+/* Seção de Visualização de Projetos */
+#viewProjectsSection {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#viewProjectsSection h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#viewProjectsSection button {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#viewProjectsSection button:hover {
+    background-color: #5a54e1;
+}
+
+/* Tabela de Projetos */
+#projectTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#projectTable th,
+#projectTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#projectTable th {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+#projectTable td button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#projectTable td button:hover {
+    background-color: #e63946;
+}
+
+/* Estilo do botão "Voltar" */
+#viewProjectsSection .btn-back {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#viewProjectsSection .btn-back:hover {
+    background-color: #ccc;
+}
+
+/* Estilo para ocultar seções */
+.hidden {
+    display: none;
+}
